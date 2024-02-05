@@ -1,0 +1,199 @@
+:root {
+  --day-size: 100px;
+  --gap-size: 1px;
+  --padding: 10px;
+}
+
+body {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.month {
+  gap: var(--gap-size);
+  width: calc(7 * (var(--day-size)  + var(--gap-size))  + 2 * var(--padding));
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.month--start-day-mon > div:first-child {
+  margin-left: calc((var(--day-size)  + var(--gap-size)) * 0);
+}
+
+.month--start-day-tue > div:first-child {
+  margin-left: calc((var(--day-size)  + var(--gap-size)) * 1);
+}
+
+.month--start-day-wed > div:first-child {
+  margin-left: calc((var(--day-size)  + var(--gap-size)) * 2);
+}
+
+.month--start-day-thu > div:first-child {
+  margin-left: calc((var(--day-size)  + var(--gap-size)) * 3);
+}
+
+.month--start-day-fri > div:first-child {
+  margin-left: calc((var(--day-size)  + var(--gap-size)) * 4);
+}
+
+.month--start-day-sat > div:first-child {
+  margin-left: calc((var(--day-size)  + var(--gap-size)) * 5);
+}
+
+.month--start-day-sun > div:first-child {
+  margin-left: calc((var(--day-size)  + var(--gap-size)) * 6);
+}
+
+.month--length-28 .month-day:nth-child(29), .month--length-28 .month-day:nth-child(30), .month--length-28 .month-day:nth-child(31), .month--length-29 .month-day:nth-child(30), .month--length-29 .month-day:nth-child(31), .month--length-30 .month-day:nth-child(31) {
+  display: none;
+}
+
+.month-day {
+  box-sizing: border-box;
+  height: var(--day-size);
+  width: var(--day-size);
+  background-color: #eee;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  display: flex;
+}
+
+.month-day:first-child:before {
+  content: "1";
+}
+
+.month-day:nth-child(2):before {
+  content: "2";
+}
+
+.month-day:nth-child(3):before {
+  content: "3";
+}
+
+.month-day:nth-child(4):before {
+  content: "4";
+}
+
+.month-day:nth-child(5):before {
+  content: "5";
+}
+
+.month-day:nth-child(6):before {
+  content: "6";
+}
+
+.month-day:nth-child(7):before {
+  content: "7";
+}
+
+.month-day:nth-child(8):before {
+  content: "8";
+}
+
+.month-day:nth-child(9):before {
+  content: "9";
+}
+
+.month-day:nth-child(10):before {
+  content: "10";
+}
+
+.month-day:nth-child(11):before {
+  content: "11";
+}
+
+.month-day:nth-child(12):before {
+  content: "12";
+}
+
+.month-day:nth-child(13):before {
+  content: "13";
+}
+
+.month-day:nth-child(14):before {
+  content: "14";
+}
+
+.month-day:nth-child(15):before {
+  content: "15";
+}
+
+.month-day:nth-child(16):before {
+  content: "16";
+}
+
+.month-day:nth-child(17):before {
+  content: "17";
+}
+
+.month-day:nth-child(18):before {
+  content: "18";
+}
+
+.month-day:nth-child(19):before {
+  content: "19";
+}
+
+.month-day:nth-child(20):before {
+  content: "20";
+}
+
+.month-day:nth-child(21):before {
+  content: "21";
+}
+
+.month-day:nth-child(22):before {
+  content: "22";
+}
+
+.month-day:nth-child(23):before {
+  content: "23";
+}
+
+.month-day:nth-child(24):before {
+  content: "24";
+}
+
+.month-day:nth-child(25):before {
+  content: "25";
+}
+
+.month-day:nth-child(26):before {
+  content: "26";
+}
+
+.month-day:nth-child(27):before {
+  content: "27";
+}
+
+.month-day:nth-child(28):before {
+  content: "28";
+}
+
+.month-day:nth-child(29):before {
+  content: "29";
+}
+
+.month-day:nth-child(30):before {
+  content: "30";
+}
+
+.month-day:nth-child(31):before {
+  content: "31";
+}
+
+.month-day:hover {
+  cursor: pointer;
+  background-color: pink;
+  transition: all .5s ease-in-out;
+  transform: translateY(-20px);
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
